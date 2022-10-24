@@ -27,7 +27,7 @@ df = df[df.population >= population_filter]
 df = df[df.capital.isin(capital_filter)]
 
 if country_filter != 'ALL':
-    df = df[df.capital == capital_filter]
+    df = df[df.country == country_filter]
 
 # show on map
 st.map(df)
